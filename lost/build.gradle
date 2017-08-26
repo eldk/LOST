@@ -14,8 +14,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'checkstyle'
 apply plugin: 'net.researchgate.release'
 
-group = GROUP
-version = VERSION_NAME
+group = GROUP_LOST
+version = VERSION_NAME_LOST
 
 allprojects {
   repositories {
@@ -35,7 +35,7 @@ android {
   buildToolsVersion '25.0.3'
 
   defaultConfig {
-    minSdkVersion 15
+    minSdkVersion 10
     targetSdkVersion 25
   }
 
