@@ -35,9 +35,9 @@ afterEvaluate { project ->
       mavenDeployer {
         beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
-        pom.groupId = GROUP
+        pom.groupId = GROUP_LOST
         pom.artifactId = POM_ARTIFACT_ID
-        pom.version = VERSION_NAME
+        pom.version = VERSION_NAME_LOST
 
         repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
           authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
